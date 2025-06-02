@@ -210,6 +210,11 @@ p {
   color: #a8a8a8;
 }
 
+@media (max-width: 790px) {
+  .quote .content {
+    padding: 40px;
+  }
+}
 .upcoming-events {
   background-color: #540d6e;
   color: #fff;
@@ -443,4 +448,14 @@ footer .copyright {
   color: #fc9eb2;
   font-size: 12px;
   font-family: gillsans-reg;
+}
+
+@media (max-width: 900px) {
+  footer {
+    padding: 40px;
+  }
+  footer .signup {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }

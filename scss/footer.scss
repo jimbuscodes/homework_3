@@ -96,3 +96,12 @@ footer {
     font-family: gillsans-reg;
   }
 }
+
+@media (max-width: 900px) {
+  footer {
+    padding: 40px;
+    .signup {
+      flex-wrap: wrap;
+    }
+  }
+}
