@@ -44,14 +44,15 @@ p {
   font-family: ptserif-reg;
   src: url(fonts/PTSerif-Regular.ttf);
 }
-nav {
-  width: 980px;
+.nav-wrapper {
+  height: 90px;
+  width: 100%;
+  position: fixed;
+}
+.nav-wrapper nav {
+  max-width: 980px;
   height: 90px;
   margin: 0 auto;
-  position: fixed;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   border-bottom: solid 2px #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,13 +64,13 @@ nav {
       -ms-flex-align: center;
           align-items: center;
 }
-nav .logo {
+.nav-wrapper nav .logo {
   position: relative;
   width: 92px;
   height: 42px;
   border: solid 2px #fff;
 }
-nav .logo span {
+.nav-wrapper nav .logo span {
   position: absolute;
   left: -2px;
   bottom: -9px;
@@ -77,7 +78,7 @@ nav .logo span {
   font-size: 20px;
   font-family: gillsans-reg;
 }
-nav .links {
+.nav-wrapper nav .links {
   width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,16 +86,26 @@ nav .links {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-nav .links a {
+.nav-wrapper nav .links a {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
   font-family: gillsans-reg;
 }
-nav .links span {
+.nav-wrapper nav .links span {
   color: #ee4367;
 }
 
+@media only all and (max-width: 980px) {
+  .nav-wrapper nav {
+    padding: 0 20px;
+  }
+}
+@media only all and (max-width: 750px) {
+  .nav-wrapper nav {
+    padding: 0 10px;
+  }
+}
 .hero {
   height: 500px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.8)), to(rgba(255, 209, 64, 0.8))), url(../images/home-hero.jpg);
