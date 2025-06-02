@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: gillsans-reg;
+  src: url(fonts/Gill-Sans-Font-Family/Gill\ Sans.otf);
+}
+@font-face {
+  font-family: gillsans-bold;
+  src: url(fonts/Gill-Sans-Font-Family/Gill\ Sans\ Bold.otf);
+}
+@font-face {
+  font-family: gillsans-light;
+  src: url(fonts/Gill-Sans-Font-Family/Gill\ Sans\ Light.otf);
+}
+@font-face {
+  font-family: gillsans-italic;
+  src: url(fonts/Gill-Sans-Font-Family/Gill\ Sans\ Italic.otf);
+}
+@font-face {
+  font-family: gillsans-semibold-italic;
+  src: url(fonts/Gill-Sans-Font-Family/Gill\ Sans\ Medium\ Italic.otf);
+}
+@font-face {
+  font-family: ptserif-reg;
+  src: url(fonts/PTSerif-Regular.ttf);
+}
+nav {
+  width: 980px;
+  height: 90px;
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-bottom: solid 2px #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px #fff;
+}
+nav .logo span {
+  position: absolute;
+  left: -2px;
+  bottom: -9px;
+  color: #fff;
+  font-size: 20px;
+  font-family: gillsans-reg;
+}
+nav .links {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+nav .links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-family: gillsans-reg;
+}
+nav .links span {
+  color: #ee4367;
+}
+
+.hero {
+  height: 500px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.8)), to(rgba(255, 209, 64, 0.8))), url(../images/home-hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .centered-content {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.hero .centered-content .heading {
+  color: #fff;
+  font-size: 40px;
+  font-family: ptserif-reg;
+}
+.hero .centered-content .heading2 {
+  font-size: 20px;
+  color: #ee4367;
+  font-family: gillsans-italic;
+}
+.hero .centered-content p {
+  font-size: 20px;
+  color: #fff;
+  font-family: gillsans-italic;
+}
+.hero .centered-content .read-more {
+  width: 122px;
+  height: 40px;
+  background-color: #ee4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .centered-content .read-more span {
+  color: #fff;
+  font-size: 15px;
+  font-family: gillsans-reg;
+  margin-top: 4px;
+}
+
+.quote {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.quote .content {
+  width: 790px;
+  height: 90px;
+}
+.quote .content .quote-text {
+  font-size: 15px;
+  font-family: gillsans-semibold-italic;
+  color: #ffd140;
+}
+.quote .content .author {
+  font-size: 15px;
+  font-family: ptserif-reg;
+  color: #ee4367;
+  margin-bottom: 0;
+}
+.quote .content .title {
+  font-size: 10px;
+  font-family: ptserif-reg;
+  color: #a8a8a8;
+}
+
+.upcoming-events {
+  height: 320px;
+  background-color: #540d6e;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 40px;
+}
+.upcoming-events .title {
+  margin-top: -30px;
+  width: 392px;
+  height: 35px;
+  color: #fff;
+  border-bottom: solid 2px #fff;
+  padding-bottom: 50px;
+}
+.upcoming-events .title .title-text {
+  font-size: 25px;
+  font-family: gillsans-reg;
+}
+.upcoming-events .events {
+  height: 124px;
+  margin-top: -100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.upcoming-events .events .event {
+  width: 210px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.upcoming-events .events .event .date {
+  width: 60px;
+  height: 60px;
+  background-color: #ee4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.upcoming-events .events .event .date span {
+  margin-top: 10px;
+  font-size: 22px;
+  font-family: gillsans-bold;
+}
+.upcoming-events .events .event .date .date {
+  margin-top: -9px;
+  margin-bottom: -5px;
+  font-size: 12px;
+  font-family: gillsans-light;
+}
+.upcoming-events .events .event .event-detail {
+  width: 140px;
+}
+.upcoming-events .events .event .event-detail .highlight {
+  font-size: 15px;
+  font-family: gillsans-reg;
+  color: #fff;
+}
+.upcoming-events .events .event .event-detail .details {
+  font-size: 13px;
+  font-family: gillsans-reg;
+  color: #ee4367;
+}
+
+footer {
+  height: 455px;
+  background-color: #ee4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer .logo {
+  position: relative;
+  width: 92px;
+  height: 42px;
+  border: solid 2px #fff;
+}
+footer .logo span {
+  position: absolute;
+  left: -2px;
+  bottom: -9px;
+  color: #fff;
+  font-size: 20px;
+  font-family: gillsans-reg;
+}
+footer .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff;
+}
+footer .contact-info .address {
+  font-size: 16px;
+  font-family: gillsans-reg;
+}
+footer .contact-info .phone {
+  font-size: 16px;
+  font-family: gillsans-reg;
+}
+footer .contact-info .email {
+  font-size: 16px;
+  font-family: gillsans-reg;
+}
+footer .signup {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .signup input {
+  height: 100%;
+  width: 529px;
+  background-color: #f56b88;
+  border: none;
+  color: #fc9eb2;
+  font-size: 16px;
+  font-family: gillsans-reg;
+}
+footer .signup ::-webkit-input-placeholder {
+  color: #fc9eb2;
+  opacity: 1;
+  font-size: 16px;
+  font-family: gillsans-reg;
+}
+footer .signup ::-moz-placeholder {
+  color: #fc9eb2;
+  opacity: 1;
+  font-size: 16px;
+  font-family: gillsans-reg;
+}
+footer .signup :-ms-input-placeholder {
+  color: #fc9eb2;
+  opacity: 1;
+  font-size: 16px;
+  font-family: gillsans-reg;
+}
+footer .signup ::-ms-input-placeholder {
+  color: #fc9eb2;
+  opacity: 1;
+  font-size: 16px;
+  font-family: gillsans-reg;
+}
+footer .signup ::placeholder {
+  color: #fc9eb2;
+  opacity: 1;
+  font-size: 16px;
+  font-family: gillsans-reg;
+}
+footer .signup .button {
+  height: 100%;
+  width: 167px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+}
+footer .signup .button span {
+  margin-top: 5px;
+  color: #ee4367;
+  font-size: 16px;
+  font-family: gillsans-reg;
+}
+footer .socials {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .copyright {
+  color: #fc9eb2;
+  font-size: 12px;
+  font-family: gillsans-reg;
+}
