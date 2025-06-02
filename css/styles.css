@@ -211,7 +211,6 @@ p {
 }
 
 .upcoming-events {
-  height: 320px;
   background-color: #540d6e;
   color: #fff;
   display: -webkit-box;
@@ -223,10 +222,9 @@ p {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 40px;
+  padding: 40px;
 }
 .upcoming-events .title {
-  margin-top: -30px;
   width: 392px;
   height: 35px;
   color: #fff;
@@ -238,17 +236,17 @@ p {
   font-family: gillsans-reg;
 }
 .upcoming-events .events {
-  height: 124px;
-  margin-top: -100px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .upcoming-events .events .event {
   width: 210px;
-  height: 100%;
+  height: 124px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,6 +297,15 @@ p {
   color: #ee4367;
 }
 
+@media (max-width: 1140px) {
+  .upcoming-events .events {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .upcoming-events .events .event {
+    margin-bottom: 20px;
+  }
+}
 footer {
   height: 455px;
   background-color: #ee4367;
